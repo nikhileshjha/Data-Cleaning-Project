@@ -22,6 +22,11 @@ Next we read the features.txt file. It contains all the features for the activit
 
 We use the grepl function to extract features with -mean( or -std( were selected.
 
+We use the gsub function to substitute -mean and -std with Mean and Std to make the names more legible.
+
 The data in X_Train is then read along with Y_train and subject_train and combined using cbind. The same is repeated for the test data set.
+
+
+Once we have all the data we find the average by user and activity.
 
 Finally, the data is combined and output as tidyData.txt
