@@ -24,7 +24,7 @@ We use the grepl function to extract features with -mean( or -std( were selected
 
 We use the gsub function to substitute -mean and -std with Mean and Std to make the names more legible.
 
-The data in X_Train is then read along with Y_train and subject_train and combined using cbind. The same is repeated for the test data set.
+The data in X_Train is then read along with Y_train and subject_train and combined using cbind. The same is repeated for the test data set. The columns are names according to the data in features.txt.
 
 
 Once we have all the data we find the average by user and activity.
